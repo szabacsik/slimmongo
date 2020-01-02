@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "*",
+        "slim/psr7": "*",
+        "php-di/php-di": "*",
+        "ext-json": "*",
+        "mongodb/mongodb": "*"
+    }
+}

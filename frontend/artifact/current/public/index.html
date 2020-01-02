@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MongoDB Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24303182df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Mongo Blog</h1>
+            </div>
+        </div>
+        <div id="target">Loading...</div>
+        <script id="postTemplate" type="x-tmpl-mustache">
+        {{#posts}}
+            <div class="row post">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>{{ title }}</h2>
+                        </div>
+                        <div class="col-3">
+                            <img src="{{ photo }}" class="img-thumbnail">
+                        </div>
+                        <div class="col-9">
+                            <p>{{ content }}</p>
+                        </div>
+                    </div>
+                    <div class="row footer">
+                        <div class="col-6 text-left"><h6>{{ author }} | {{ created }}</h6></div>
+                        <div class="col-6 text-right">
+                            <i class="fab fa-facebook fa-2x"></i>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <i class="fab fa-twitter fa-2x"></i>
+                            <i class="far fa-envelope fa-2x"></i>
+                            <i class="fab fa-pinterest fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/posts}}
+        </script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

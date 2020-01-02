@@ -1,0 +1,9 @@
+{
+	"lorem": "ipsum",
+	"database": {
+		"host": "127.0.0.1",
+		"name": "myDatabase",
+		"user": "myUser",
+		"password": "myPassword"
+	}
+}
